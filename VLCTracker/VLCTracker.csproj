@@ -41,6 +41,8 @@
   <ItemGroup>
     <Reference Include="System" />
     <Reference Include="System.Core" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
     <Reference Include="System.Xml.Linq" />
     <Reference Include="System.Data.DataSetExtensions" />
     <Reference Include="Microsoft.CSharp" />
@@ -49,12 +51,31 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Classes\Series.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Properties\Resources.Designer.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
       <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="Views\InitializeSeriesWindow.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Views\InitializeSeriesWindow.Designer.cs">
+      <DependentUpon>InitializeSeriesWindow.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Views\SeriesView.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Views\SeriesView.Designer.cs">
+      <DependentUpon>SeriesView.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Views\SingleFileDialog.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Views\SingleFileDialog.Designer.cs">
+      <DependentUpon>SingleFileDialog.cs</DependentUpon>
     </Compile>
   </ItemGroup>
   <ItemGroup>
@@ -64,6 +85,15 @@
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
       <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Views\InitializeSeriesWindow.resx">
+      <DependentUpon>InitializeSeriesWindow.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Views\SeriesView.resx">
+      <DependentUpon>SeriesView.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Views\SingleFileDialog.resx">
+      <DependentUpon>SingleFileDialog.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <ItemGroup>
